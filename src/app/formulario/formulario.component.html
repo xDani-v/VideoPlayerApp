@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" id="nombre" name="nombre" ngModel required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">URL</ion-label>
+      <ion-input type="url" id="url" name="url" ngModel required></ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" type="submit">Enviar</ion-button>
+  </form>
+
+  <!-- tabla -->
+  <ion-grid>
+    <ion-row>
+      <ion-col><strong>Nombre</strong></ion-col>
+      <ion-col><strong>URL</strong></ion-col>
+      <ion-col><strong>Acciones</strong></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let dato of Lista; let i = index">
+      <ion-col>{{ dato.nombre }}</ion-col>
+      <ion-col>{{ dato.url }}</ion-col>
+      <ion-col>
+        <ion-button (click)="editarDato(i)" color="primary">Editar</ion-button>
+        <ion-button (click)="eliminarDato(i)" color="danger">Eliminar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item>
+    <input type="file" (change)="onFileSelected($event)" accept="video/*">
+  </ion-item>
+  
+
+  <!-- reproductor de video -->
+  <ion-card *ngIf="videoUrl">
+    <ion-card-content>
+      <video width="100%" controls [src]="videoUrl" type="video/mp4" (error)="onVideoError($event)"></video>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

@@ -1,0 +1,29 @@
+workflows:
+  android:
+    name: Android Workflow
+    environment:
+      vars:
+        # Variables de entorno para la firma
+        CM_KEYSTORE: MIIKjAIBAzCCCjYGCSqGSIb3DQEHAaCCCicEggojMIIKHzCCBbYGCSqGSIb3DQEHAaCCBacEggWjMIIFnzCCBZsGCyqGSIb3DQEMCgECoIIFQDCCBTwwZgYJKoZIhvcNAQUNMFkwOAYJKoZIhvcNAQUMMCsEFOa4vclCfdxB/bKHiMvGqVcZVZqCAgInEAIBIDAMBggqhkiG9w0CCQUAMB0GCWCGSAFlAwQBKgQQAi3NIZu3b8rwMZFO5xKmkwSCBNAGTfmSUqq5g/xt+aLHsNulXvgLI7RRcqqxSKDxB0RplhkhuQkhSGWImn79gQ0QvDfw1DhXEL3xH1T7tuI1TpBOE5ewin2NU0lQyNy3uswtBm3Ul/TufIQx1UgSwC+3OdAYxhHY6Hz4bQZqSRl38nYY6IhROzsvWsDyvvhNlgH8r8ZAJ0TnfbewZmPWWp5NLjnTWr9Ez9IEsDVKO7Al9ik/ZDCULbRVcowV7Z6Y++gRn9tB1gorZot3piI3vLVGMXOuD5u79BXJ9cCu54hAV0WAntjCTLY67y+nsFxTe/bCba9t/05246Bj276HfYiRllTxSTcRqnt+Id7gSBjXyULIbY6mEG+0xqiWwP8sDGVRaVMuI/Rb7RPubKyIl6dvv8pj/9lUyuhdZrBFtwOSZneu6/yYwoDwQddXmhMJxlNv1Y7JSQzI0PBZGH4WomTd0BTBl35LPKv8eKbdCI57kljgl2QKmOCa/Xslv60NeAdol07iQ+ntjdVJrpH4GYrU8J6juCYEz5L3S/RfUEpyt054yU+CwB5+Gxtj+Zi9pJAk7X2XikSz7x0sV+J6f4NKkOeTt3FqfdHgwS2dXhbzCaTKdwZJYp6BNlc4zoiQeQ55W5tXZOHl887fB0l3JgRxQrUvCpYX8fz8clVYry7UT6u4I1i8lU7IfQTnNFxcjr1q9pJ3RS7ov3TxohTrK0TLLqVa8dC+e9O9/VjC31C/g3i/qcGdzuR9hQLCBEsjJEf4yNkW0ky/f3VOGDW7yStWWxIi37NyuXEkzt9YDu/e01joEERua79CJDGYtNMOLT0pAjDQ5nGWHPzA2lUeJFR2idHrFUWvpfJebt2a1zN3LMGwTL0oFk2aA1A1LYiAhr9bvhkMqE/4ED9DWO66FcUPXvoYLJpB6jsanIsxaLxtJ4c6etqAZDLtTuI5jy6AGVxuCJfBieqgeOMAsD/ggIQ1QbUeSGPogX/6BKZtECaRh0UJRniWNts8vJELMiDkaC3XWIv0pyu0LGHzeofDC0n4lM11ZFtrxzs+wau3pa0nUsnQHtHMAJWi/2ff1IdMuvGKMxLmuCEpvJAbdDq6c3OoTMB3qogjdLjgt1FfDGBhK6b0q0oi0jpLK8pABHaPiz2aymcrIzHF2IOmbEZDJDRm9kqza+NTBH+hOxcjbC2KIFY+HtqzJ7x1gnCyW37zAvDojU5HYycFd7A2Rnp2vGqZDZ8jzs0c2RJnA/rcYnIo8vzCdWVyIkYf3THgNDy70bKiRGPs2QwuSCxgVfhCFW2KTgGu9o4NwwQ0KBVI7QFreb9zF3IaxIlrhZyZYrBxXoUNbB4DToUmRBNG9ru9EncvQIJD4A2/2okjlKrNSzwbs9/ql9+4d2OllqUTrfeWaZSwLTdUpreFb5/HDxy4YRYU8ANysj8vH2ufkII9du0jMMqmujMApfEuRx8jlIqvYEQocpVnwPt+kqri4UexfqTw579v2ETI9/6JNtVSfV0QeTtq3sG/eewqjukbXnur4c7KsQ+SFyxpZOGxiuj7j0BugkbywqqeAaoZ1Gj74R28vRLY9WQ+K0QTHuGsY4kp2hGRLNtgo5mZedm7ZLBkpeFvMBfX4enXzlbfNhOrqxAMTLtbQUrDSqgx5GUkdwSURhkvdDFIMCMGCSqGSIb3DQEJFDEWHhQAeABkAHYAaQBkAGUAbwBhAHAAcDAhBgkqhkiG9w0BCRUxFAQSVGltZSAxNzMxNzU5ODE2MDYyMIIEYQYJKoZIhvcNAQcGoIIEUjCCBE4CAQAwggRHBgkqhkiG9w0BBwEwZgYJKoZIhvcNAQUNMFkwOAYJKoZIhvcNAQUMMCsEFBp2nd8LRkq8cgiH86zNn7ggPkYtAgInEAIBIDAMBggqhkiG9w0CCQUAMB0GCWCGSAFlAwQBKgQQftrH4lDysN0xAIEPPxiWBoCCA9AChzuABVbVtC5vWU6pbagg9hW/CtAPw1nsH9RBQWl0ttAzFFHt0YwcDrdyes3oGj5bq+ANNMzadv/ea1YtEGyZqkvtpOlHXj77IxJV7l0z6mvNIaAXojYdp0/eBc6UbSLly7Kmbx5tsf3criUU6JMqMJkRiwQpKfN9ZUmNnckB0zQ6sWiV5rX7ZlgaPDm1us6c0PQ/k2hCwi+3TGlTKdkbZbF9P7pOQMxot/m0iv2yVft4W9vMbJoN4KOaboQ7G+v2KsYO3AlbocXO1AlU4XpDbCL5gjM546+LIdu7uai2bk5iKCNIkgTfp8pv9wJSIsUnEvRLGbriI7+ZTR2ofOb1/AoMfqjY5n7qYlNI6qUHqRCnq9lImc/7tLFuxjSdJUon1kwu2X1DRHLmYneJd+SP1yByBvDJER3CFgyJxo+U1MQiBGQz/1ALcC/UpEsPHFYSD5oi15sZyx/VSCWaovc5c20o+euP8EwJbMfx34BsSK83ARyTXHXDeo9RIsZHm59LVZE6UJO8UGCqoH/pdnGae7rKIrm44nl5vhdbuPNAeJBmu9EWpfQx6djNjQN6YGD8sPUnIe9oH3Zk7MXOxALk6SbNb/SPcAeSgV2+eK1bgtBQCi/m6SABp250QvWAS3Uvgmjx/DN0WDHV2oLmsj5uphUnKX5a5m9HgliwNkeb7CBmAaj1LZWhpGzsNVVM1HzMLmKK+ITSzQM/KKhEoJKYDlTaUg+TYzt/Y8fT8y+F736EUvCm5E4YZCtv8CLP9ZBjUCuHIaL7ZEQ/HWTv0SSNCg6z4bsw9swhHtuSDrc+Jp0jJVywvwYG1GxHiaBqhkTO2l6jpXO2LNEbW87zEnPEq02EeM3FnocpDXAS/b3vTr3BKoTrYqEYsD8/Uwtk+g9/smEZza26pFeDfS/KnFekiUecC3ZI8GDnz2t4PqNRO2tAwY+PwBrcuUo0UbeY7+gc23zuTQtHCNOwlKuJx5EXgYiYHkYvb8k62t7FE3EUFtM72motwmOGyqNSGy1JNyddWAu+JxZVlLMHH/nObm0T92/ihFoatBkbQQ4hAOI2aTdN/2+QWldO86zxrNK6j6n26WKmf/RROwgEbIUVUIT4j5AVqvxlJ0jDZGBKiGtTASO2cZxzkEJH0iunAnNmiWpSYSnSaWT3BgYPpzl+/kgWqd0KvbkQYvzt0HiEjjxxG4U58DnWx0hwqY2mZoSYqHdZv3D3xMzK79oXn9GmCodFFPYf8bXdqpUOsGiZkvB71lmzxcu+mpLTbyCSlVb3nEukJbef5NgGPVA7qR8V+NQoME0wMTANBglghkgBZQMEAgEFAAQgIscKsmpSySG9edWfu+0AjsthbVXLCjB8FuP0j9FxossEFAg1k7T+l/8h5tsE/MFZfZKHz9KFAgInEA==
+        CM_KEYSTORE_PASSWORD: xdadmin
+        CM_KEY_ALIAS: xdvideoapp
+        CM_KEY_PASSWORD: xdadmin
+      node: 14.17.0
+      android: true
+    scripts:
+      - name: Install dependencies
+        script: npm install
+      - name: Build Ionic project
+        script: ionic build
+      - name: Sync Capacitor
+        script: npx cap sync android
+      - name: Build Android app
+        script: |
+          cd android
+          ./gradlew assembleRelease
+    artifacts:
+      - android/app/build/outputs/**/*.apk
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com

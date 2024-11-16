@@ -9,7 +9,6 @@ workflows:
         CM_KEY_ALIAS: xdvideoapp
         CM_KEY_PASSWORD: xdadmin
       node: 14.17.0
-      android: true
     scripts:
       - name: Install dependencies
         script: npm install

@@ -16,6 +16,8 @@ workflows:
         script: ionic build
       - name: Sync Capacitor
         script: npx cap sync android
+      - name: Grant execute permissions to gradlew
+        script: chmod +x android/gradlew
       - name: Build Android app
         script: |
           cd android

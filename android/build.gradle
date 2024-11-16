@@ -27,3 +27,30 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "io.ionic.starter"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'testapp'
+            keyPassword 'admin1234'
+            storeFile file('app/testapp.jks')  // Ruta actualizada
+            storePassword 'admin1234'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}

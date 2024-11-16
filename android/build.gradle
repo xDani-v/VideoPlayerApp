@@ -26,6 +26,7 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'io.ionic.starter'
     compileSdkVersion 30
     defaultConfig {
         applicationId "io.ionic.starter"
